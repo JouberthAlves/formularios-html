@@ -1,0 +1,34 @@
+:root {
+  /* Váriaveis */
+  /* ----CORES---- */
+  /* ----BRAND---- */
+  --brand-light: #59B2FF;
+  --brand-md: #3487CF;
+  --brand-dark: #1D6FB6;
+  /* ACCENT-COLORS */
+  --accent-p: #B259FF;
+  --accent-fuschia: #FF59F9;
+  --accent-pink: #FF598B
+  --accent-orange: #FF8B59;
+  --accent-yellow: #FFCD59;
+  --accent-lime: #E1FF59;
+  --accent-green: #59FF91;
+  --accent-cyan: #59FFF9;
+  --accent-navy: #6A59FF;
+  /* --FEEDBACK-- */
+  --feedback: #FF5959;
+  /* ---INPUT--- */
+  --input-base: #1C1F21;
+  --input-stroke: #363B40;
+  --input-placeholder: #869198;
+  /* ---SHAPE--- */
+  --shape-bg: #131516;
+  --shape-bd: #212427;
+  --shape-btt: #2D3136;
+  --shape-hover: #383D42;
+  /* TEXT-COLOR */
+  --text-body: #C8CDD0;
+  --text-heading: #F9F9F9;
+  /* ---FONTS--- */
+  --font-family: "Leckerli One";
+}
