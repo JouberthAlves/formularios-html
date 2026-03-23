@@ -19,9 +19,59 @@
     />
   </head>
   <body>
-    <div style="font: var(--font-family-one);">
-      <p>
-      </p>
+    <div id="app">
+      <aside>
+        <div class="aside-container">
+          <img class="confete" src="assets/Logo.svg" alt="">
+          <h1>Festivite</h1>
+          <h3>Crie um convite digital para seu evento!</h3>
+        </div>
+      </aside>
+      <main>
+        <div class="container-main">
+          <div class="title">
+            <h1>Crie seu convite</h1>
+          </div>
+
+          <div class="container-main">
+            <div class="about-event">
+              <div>
+                <h2>Sobre o evento</h2>
+              </div>
+              <div class="input-wrapper">
+                <form action="#">
+                  <fieldset>
+                    <div class="sobre-evento">
+                      <legend>Sobre o evento</legend>
+                      <div class="tittle-wrapper">
+                        <label for="eventName">Título</label>
+                        <input type="text" placeholder="Nome do Evento" id="eventName">
+                      </div>
+                      <div class="start-wrapper">
+                        <label for="inicio">Início</label>
+                        <input type="datetime-local" id="inicio">
+                      </div>
+                      <div class="end-wrapper">
+                        <label for="end">Fim</label>
+                        <input type="datetime-local">
+                      </div>
+                      <div class="type-wrapper">
+                        <label for="type">Tipo</label>
+                        <input type="radio" id="type presencial" checked>
+                        <label for="presencial">Presencial</label>
+                        <input type="radio" id="type online">
+                        <label for="online">Online</label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </main>
     </div>
   </body>
 </html>
