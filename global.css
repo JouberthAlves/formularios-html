@@ -43,7 +43,7 @@
   --text-logo: 400 40px/1.5 var(--font-family-logo);
   --heading-md: 600 28px/1.5 var(--font-family-baloo);
   --heading-sm: 600 18px/1.5 var(--font-family-baloo);
-  --body-md: 500 16px/1.5 var(--font-family-body);
+  --body-md: 600 16px/1.5 var(--font-family-body);
   --body-sm: 400 14px/1.5 var(--font-family-body);
   --body-xs: 400 12px/1.5 var(--font-family-body);
 }
