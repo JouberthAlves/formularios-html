@@ -46,6 +46,8 @@
   --body-md: 600 16px/1.5 var(--font-family-body);
   --body-sm: 400 14px/1.5 var(--font-family-body);
   --body-xs: 400 12px/1.5 var(--font-family-body);
+
+  --bg-color: ;
 }
 
 fieldset {

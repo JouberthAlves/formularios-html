@@ -1,0 +1,62 @@
+h2 {
+  font: var(--body-md);
+  color: var(--text-heading);
+  margin-left: 8px;
+}
+
+.input-wrapper input:hover {
+  border: 1px solid var(--brand-light);
+}
+.input-wrapper textarea:hover {
+  border: 1px solid var(--brand-light);
+}
+.input-wrapper input:focus {
+  border: 1px solid var(--brand-light);
+}
+.input-wrapper textarea:focus {
+  border: 1px solid var(--brand-light);
+}
+
+.customize {
+  margin-top: 48px;
+}
+
+.customize div:first-child {
+  display: flex;
+}
+
+.cores p {
+  margin-top: 24px;
+  color: white;
+  font: var(--body-sm);
+  margin-bottom: 16px;
+}
+
+.color-picker {
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-picker input {
+  display: none;
+  width: 100%;
+}
+
+.color-picker .input-wrapper label {
+  border-radius: 50%;
+  display: flex;
+  width: 40px;
+  /* background-color: #fff; */
+  height: 40px;
+  border: 6px solid var(--shape-btt);
+  
+}
+
+.color-picker .input-wrapper label:hover {
+  border: 3px solid var(--shape-btt);
+  transition: 0.2s;
+}
+
+.customize input[type="radio"]:checked + label {
+  outline: 2px solid var(--brand-md);
+}
