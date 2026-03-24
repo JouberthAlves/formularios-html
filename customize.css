@@ -4,25 +4,70 @@ h2 {
   margin-left: 8px;
 }
 
-.input-wrapper input:hover {
-  border: 1px solid var(--brand-light);
+textarea {
+  color: var(--text-heading);
 }
-.input-wrapper textarea:hover {
+
+input[type="text"]:focus {
   border: 1px solid var(--brand-light);
+  outline: none;
 }
-.input-wrapper input:focus {
+input[type="datetime-local"]:focus {
   border: 1px solid var(--brand-light);
+  outline: none;
 }
-.input-wrapper textarea:focus {
+textarea:focus {
   border: 1px solid var(--brand-light);
+  outline: none;
+  /* color: var(--text-heading); */
+}
+
+.color-picker {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 28px;
+
+  & input {
+    display: none;
+    width: 100%;
+  }
+
+  & .input-wrapper label {
+    border-radius: 50%;
+    display: flex;
+    width: 40px;
+    /* background-color: #fff; */
+    height: 40px;
+    border: 6px solid var(--shape-btt);
+  }
+
+  & .input-wrapper input:hover {
+    border: 1px solid var(--brand-light);
+    transition: 0.2s;
+  }
+
+  & .input-wrapper textarea:hover {
+    border: 1px solid var(--brand-light);
+  }
+
+  & .input-wrapper label:hover {
+    border: 3px solid var(--shape-btt);
+    transition: 0.2s;
+  }
 }
 
 .customize {
   margin-top: 48px;
-}
 
-.customize div:first-child {
-  display: flex;
+  & .flex {
+    display: flex;
+    /* border: 1px solid red; */
+  }
+
+  & input[type="radio"]:checked + label {
+    outline: 2px solid var(--brand-md);
+  }
 }
 
 .cores p {
@@ -32,31 +77,43 @@ h2 {
   margin-bottom: 16px;
 }
 
-.color-picker {
-  display: flex;
-  justify-content: space-between;
-}
+/* ----GRID THEME--- */
 
-.color-picker input {
-  display: none;
+.grid-theme {
   width: 100%;
-}
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 8px;
 
-.color-picker .input-wrapper label {
-  border-radius: 50%;
-  display: flex;
-  width: 40px;
-  /* background-color: #fff; */
-  height: 40px;
-  border: 6px solid var(--shape-btt);
-  
-}
+  & label {
+    width: 134px;
+    height: 100px;
+    background-color: var(--shape-btt);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+  }
 
-.color-picker .input-wrapper label:hover {
-  border: 3px solid var(--shape-btt);
-  transition: 0.2s;
-}
+  & label p {
+    margin: 0px;
+    margin-top: 7px;
+  }
 
-.customize input[type="radio"]:checked + label {
-  outline: 2px solid var(--brand-md);
+  & input[type="radio"]:checked + label {
+    outline: 2px solid var(--brand-light);
+  }
+
+
+  & div img {
+    width: 126px;
+    height: 64px;
+    border-radius: 8px;
+    margin-top: 3px;
+  }
+
+  & input {
+    display: none;
+  }
 }
