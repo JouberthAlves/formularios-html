@@ -59,6 +59,7 @@ textarea:focus {
 
 .customize {
   margin-top: 48px;
+  margin-bottom: 48px;
 
   & .flex {
     display: flex;

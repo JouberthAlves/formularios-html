@@ -1,0 +1,46 @@
+.data {
+  & .datas {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    & .input-wrapper:nth-child(1) {
+      grid-column: span 2;
+    }
+  }
+
+  & .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    & .input-wrapper input:not(:placeholder-shown) ~ .error-message {
+      display: none;
+      border: 1px solid var(--input-stroke);
+    }
+
+    & .input-wrapper input:not(:placeholder-shown) {
+      border: 1px solid #303239; 
+    }
+
+    & .input-wrapper:nth-child(1) input:placeholder-shown {
+      border: 1px solid var(--feedback);
+    }
+
+    & .error-message {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 8px;
+
+      & span {
+        margin-left: 5px;
+      }
+    }
+  }
+}
