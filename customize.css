@@ -84,6 +84,7 @@ textarea:focus {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   gap: 8px;
+  margin-bottom: 26px;
 
   & label {
     width: 134px;
@@ -105,7 +106,6 @@ textarea:focus {
     outline: 2px solid var(--brand-light);
   }
 
-
   & div img {
     width: 126px;
     height: 64px;
@@ -114,6 +114,105 @@ textarea:focus {
   }
 
   & input {
+    display: none;
+  }
+}
+
+.style {
+  
+  & div:first-child {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+  }
+
+  & .toggle-text {
+    position: absolute;
+    top: 72px;
+    left: 65px;
+  }
+
+  & .toggle-container {
+    display: flex;
+    align-items: center;
+
+    & .toggle-input {
+      appearance: none;
+    }
+  }
+
+  & label {
+    width: 64px;
+    height: 32px;
+    background-color: var(--input-base);
+    border-radius: 50px;
+    border: 1px solid var(--input-stroke);
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+
+    & .toggle-button {
+      width: 24px;
+      height: 24px;
+      background-color: var(--input-stroke);
+      border-radius: 50%;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+    }
+  }
+
+  & p {
+    color: var(--text-heading);
+    font: var(--body-sm);
+  }
+
+  & .toggle-input:checked + .toggle-label .toggle-button {
+    transform: translateX(32px);
+    background-color: var(--text-heading);
+    transition: 0.5s;
+  }
+
+  & .toggle-button {
+    transition: 0.5s;
+  }
+
+  & .toggle-text:after {
+    font: var(--body-xs);
+    content: "Escuro";
+    color: var(--text-body);
+    margin-left: 10px;
+  }
+
+  & input[type="checkbox"]:checked ~ .toggle-text:after {
+    content: "Claro";
+    font: var(--body-xs);
+    color: var(--text-heading);
+    margin-left: 10px;
+  }
+
+  & .input-file label {
+    background-color: var(--input-stroke);
+    width: 119px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+
+    & img {
+      margin-right: 5px;
+      margin-top: 5px;
+    }
+
+    & span {
+      color: var(--text-heading);
+      font: var(--body-sm);
+    }
+  }
+
+  & .input-file input[type="file"] {
     display: none;
   }
 }
