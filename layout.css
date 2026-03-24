@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 25% 75%;
   overflow: hidden;
+  /* padding: 80px; */
 }
 
 main {
