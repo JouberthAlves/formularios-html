@@ -1,0 +1,42 @@
+.check-box {
+  padding-top: 40px;
+  margin-bottom: 48px;
+
+  & .input-wrapper {
+    display: flex;
+    /* align-items: center; */
+    gap: 12px;
+    margin-bottom: 10px;
+
+    & label {
+      display: flex;
+      gap: 8px;
+    }
+
+    & input[type="checkbox"]:checked + label div {
+      outline: 1px solid var(--brand-light);
+      background-image: url(assets/icons/check.svg);
+    }
+
+    & .check {
+      width: 20px;
+      height: 20px;
+      background-color: var(--input-base);
+      border: 1px solid var(--input-stroke);
+      border-radius: 6px;
+    }
+
+    & input {
+      appearance: none;
+      display: none;
+      /* margin: 0px 0px 10px 0px; */
+    }
+
+    & label span {
+      color: var(--brand-light);
+      text-decoration: underline;
+      cursor: pointer;
+      /* margin-bottom: 10px; */
+    }
+  }
+}
